@@ -10,4 +10,20 @@ export const getUserQuery = `
       linkedInUrl
     }
   }
-`
+`;
+
+export const createUserMutation = `
+  mutation createUser($input: UserCreateInput!) {
+    userCreate(input: $input) {
+      user {
+        name
+        email
+        avatarUrl
+        description
+        githubUrl
+        linkedInUrl
+        id
+      }
+    }
+  }
+`;
