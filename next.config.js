@@ -1,7 +1,23 @@
+const path = require('path')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains:['lh3.googleusercontent.com']
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+        pathname: '**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'res.cloudinary.com',
+        pathname: '**'
+      }
+    ],
+  },
+  experimental: {
+    serverComponentsExternalPackages: ['cloudinary', 'graphql-request']
   }
 }
 
