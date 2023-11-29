@@ -41,12 +41,11 @@ const ProjectForm = ({ type, session, project }: Props) => {
       if(type === 'edit')
       await updateProject(form, project?.id as string, token)
     router.push('/')
+    alert('Project created succesfully')
     } catch (error) {
       console.error(error);
     } finally {
       setisSubmitting(false)
-      router.push('/')
-
     }
   };
   const handleChangeImage = (e: ChangeEvent<HTMLInputElement>) => {
