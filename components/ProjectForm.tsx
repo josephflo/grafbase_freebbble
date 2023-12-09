@@ -94,10 +94,10 @@ const ProjectForm = ({ type, session, project }: Props) => {
           />
         )}
       </div>
-      <FormField 
+      <FormField
         title= 'Title'
         state={form.title}
-        placeholder='Flexibble'
+        placeholder='Freebbble'
         setState={(value) => handleStateChange('title',value)}
       />
       <FormField 
@@ -110,14 +110,14 @@ const ProjectForm = ({ type, session, project }: Props) => {
         type= 'url'
         title= 'Website URL'
         state={form.liveSiteUrl}
-        placeholder='Flexibble'
+        placeholder='Freebbble'
         setState={(value) => handleStateChange('liveSiteUrl',value)}
       />
       <FormField 
       type= 'url'
         title= 'GitHub URL'
         state={form.githubUrl}
-        placeholder='Flexibble'
+        placeholder='Freebbble'
         setState={(value) => handleStateChange('githubUrl',value)}
       />
       

@@ -28,13 +28,13 @@ const Footer = () => {
       <div className="flex flex-col gap-12 w-full">
         <div className="flex items-start flex-col">
           <Image
-            src="/logo-purple.svg"
+            src="/logo.svg"
             alt="purpple-logo"
             width={115}
             height={38}
           />
           <p className="footer_p">
-            Flexibble is the world's leading comunity for creatives to share,
+            Freebbble is the world's leading comunity for creatives to share,
             grow, and get hired.
           </p>
         </div>
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flexBetween footer_copyright">
-        <p>@ 2023 Flexibble. All rights reserved</p>
+        <p>@ 2023 Freebbble. All rights reserved</p>
         <p className="text-gray">
           <span className="text-black font-semibold">10,214</span> projects
           submitted
