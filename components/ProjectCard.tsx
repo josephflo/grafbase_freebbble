@@ -30,7 +30,7 @@ const ProjectCard = ({ id, name, image, title, avatarUrl, userId }: Props) => {
         src={image}
         width={414}
         height={314}
-        className="w-full h-full object-cover rounded-2xl"
+        className="w-full h-5/6 rounded-2xl "
         alt="project image"
       />
       <div className="hidden group-hover:flex profile_card-title">

@@ -9,6 +9,7 @@ import Button from "./Button";
 
 const Navbar = async () => {
   const session = await getCurrentUser();
+  console.log(session)
 
   return (
     <nav className="flexBetween navbar">
